@@ -1,0 +1,130 @@
+/* universal and body css */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* header */
+.sticky-header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+header {
+    padding: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #515357;
+    color: #ffffff;
+}
+
+nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    ul {
+        list-style-type: none;
+        color: aqua;
+        li {
+            display: inline-block;
+            margin-left: 25px;
+        }
+    }
+}
+
+h1 { 
+    display: inline-block;
+    font-size: 40px;
+}
+
+#container {
+    min-height: 100%;
+}
+#main{
+    overflow: auto;
+    padding-bottom: 100px;
+}
+
+
+/* CSS for the about me section */
+.my-header {
+    margin-top: 100px;
+}   
+
+.about-me-section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image, .about-me {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 30px;   
+}
+
+/* CSS for the hero section */
+hr{
+    border: none;
+    border-top: 2px solid #515357;
+    color: #515357;
+    text-align: center;
+    height: 5px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* CSS for the "my work" including card changes */
+
+
+.card {
+    width: 375px !important;
+    height: 500px;
+    display: block;
+    box-shadow: none;
+    transition: transform 0.3s ease-in-out, background-image .3s ease-in-out; /* Add transition for background image */    
+    flex: 1 0 375px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 4px solid !important; /* Ensure the border is visible */
+    overflow: hidden; /* Prevent background image from affecting the border */
+    background-color: #515357;
+}
+
+
+
+/* footer CSS */
+
+#footer {
+    position: relative;
+    padding: 20px;
+    background-color: #515357;
+    color: #fff;
+    margin-top: 100px;
+    clear:both;
+    height:100px;
+  }
+
+footer h2 {
+    border-right-style: dashed;
+    border-right-width: 5px;
+    border-right-color: black;
+}
+
+.fa-github{
+    background-color: white; 
+    color: black;
+}
+
+.a-linkedin{
+    color: blue;
+}

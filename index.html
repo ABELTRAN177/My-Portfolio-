@@ -12,11 +12,14 @@
 </head>
 
 <body>
+  <!-- this will allow the nav bar/header to follow the user when they scroll -->
   <header id="header" class="sticky-header">
     <h1>Angel Beltran</h1>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"></a>
+        <!-- originally a collapsible nav bar but changed it so that only the work is a dropdown, 
+        all nav bar directories have a link that takes you to its location on the page-->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -31,6 +34,7 @@
                 data-bs-toggle="dropdown" aria-expanded="false">
                 MY WORK
               </a>
+              <!-- if user does not want to cycle through carousel, they can choose the project of their choice from the directory -->
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="https://github.com/ABELTRAN177/Refactoring-Horiseon">Refactoring
                     Horiseon</a></li>
@@ -73,11 +77,11 @@
         <h2 style="text-align: center;" class="my-header">About Me</h2>
         <div class="about-me-section">
           <img src="./Assets/images/94236629-4656-4a18-bf7f-0721bef41e1c.jpg" alt="Angel Beltran" class="image">
-          <p class="about-me">My name is Angel and I am a novice Full Stack Developer. Before that, i am a full time
+          <p class="about-me">My name is Angel and I am a novice Full Stack Developer. I am a full time
             explorer and traveller.
-            I love being in the uncharted and experience life through different cultures! In my free time I go to the
+            I love being in the uncharted and make new experiences and memories. In my free time I go to the
             gym, binge/watch movies and TV shows.
-            Been playing video games since i could walk and are a key in helping escape reality every now and then. I
+            Been playing video games since i could walk and is key in helping escape reality every now and then. I
             decided to purse the realm of development
             to make a difference in my community and to launch projects of my own! I have experience in HTML, CSS,
             JavaScript,
@@ -88,13 +92,14 @@
       </section>
     </div>
   </div>
-
+<!-- line to separate the about me from the work listed  -->
   <hr>
-
+<!-- instead of creating a card for each project, i decided to include a js function to automaticall add a new card when entered -->
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-slide="false">
     <h2 style="text-align: center; margin-bottom: 100px;" class="my-header">My Work</h2>
     <div class="carousel-inner"></div>
 
+<!-- buttons on both righ and left side of the page that help cycle through cards/projects -->
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
       data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -119,7 +124,7 @@
       </a>
     </div>
   </footer>
-
+<!-- used both jquery and boostrap -->
   <script src="./Assets/JS/Index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

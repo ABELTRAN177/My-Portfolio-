@@ -1,3 +1,6 @@
+// created a function that will take the variable of "cards" and create a carousel of cards that will display the title, 
+// text, image, and link of the project. this helps clean code on the html file and makes it easier to add more projects in the future.
+
 $(document).ready(function () {
     var cards = [
         {
@@ -59,7 +62,8 @@ $(document).ready(function () {
 
     var carouselInner = document.querySelector(`.carousel-inner`);
 
-
+// template that gets rendered each time the function is called
+// when new cards are added they follow the same template
     cards.forEach(function(card, index) {
         var activeClass = index === 0 ? 'active' : '';
         var cardHTML = `
@@ -78,7 +82,9 @@ $(document).ready(function () {
         `;
         carouselInner.innerHTML += cardHTML;
     });
-
+// this function allows the carousel to slide to the next card when the current card is clicked
+// also allows the user to return to the previous card
+// tried to get three cards to generate per slide but had issues, will try to fix in the future
     $(`#carouselExampleIndicators`).on(`slide.bs.carousel`, function (e) {
         var $e = $(e.relatedTarget);
         var idx = $e.index();

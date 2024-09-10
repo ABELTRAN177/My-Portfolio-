@@ -117,8 +117,9 @@ adds ">" as an icon and removed hover affect*/
     clear: both;
     height: 100px;
 }
+
+/* removed dashed lines */
 footer h2 {
-    border-right-style: dashed;
     border-right-width: 5px;
     border-right-color: black;
 }

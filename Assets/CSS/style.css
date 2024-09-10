@@ -86,22 +86,6 @@ hr{
 /* CSS for the "my work" including card changes */
 
 
-.card {
-    width: 300px !important;
-    height: 500px;
-    display: block;
-    box-shadow: none;
-    transition: transform 0.3s ease-in-out, background-image .3s ease-in-out; /* Add transition for background image */    
-    flex: 1 0 375px;
-    margin: 10px;
-    border-radius: 5px;
-    border: 4px solid !important; /* Ensure the border is visible */
-    overflow: hidden; /* Prevent background image from affecting the border */
-    background-color: #515357;
-    color: #fff;
-    text-align: center;
-}
-
 .card button {
     display: block;
     margin: 0 auto;
@@ -120,13 +104,19 @@ hr{
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
     align-items: center;
-    margin-top: 150%;
 }
- .carousel-control-prev-icon:hover, .carousel-control-next-icon:hover{
-    background-color: #515357;
-    padding: 10px;
-    ;
+
+ .carousel-control-next-icon:after{
+    content: '>';
+    font-size: 55px;
+    color: #515357;
  }
+
+.carousel-control-prev-icon:after{
+    content: '<';
+    font-size: 55px;
+    color: #515357;
+    }
 
 
 /* footer CSS */

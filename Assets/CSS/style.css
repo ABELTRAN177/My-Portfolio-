@@ -3,15 +3,14 @@
     padding: 0;
     margin: 0;
 }
-
-html, body {
+html,body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-/* header */
-.sticky-header{
+/* header and nav bar css */
+.sticky-header {
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -22,7 +21,6 @@ header {
     background-color: #515357;
     color: #ffffff;
 }
-
 nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -38,42 +36,38 @@ nav {
         }
     }
 }
-
-h1 { 
+h1 {
     display: inline-block;
     font-size: 40px;
 }
-
 #container {
     min-height: 100%;
 }
-#main{
+#main {
     overflow: auto;
     padding-bottom: 100px;
 }
 
-
-/* CSS for the about me section */
+/* CSS for the about me section,
+displays all content in the center */
 .my-header {
     margin-top: 100px;
-}   
-
-.about-me-section{
-    display:flex;
+}
+.about-me-section {
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-.image, .about-me {
+.image,.about-me {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    margin-top: 30px;   
+    margin-top: 30px;
 }
 
 /* CSS for the solid line section separator  */
-hr{
+hr {
     border: none;
     border-top: 2px solid #515357;
     color: #515357;
@@ -83,65 +77,55 @@ hr{
     margin: 0 auto;
 }
 
-/* CSS for the "my work" including card changes */
+/* Carousel CSS,
+adds ">" as an icon and removed hover affect*/
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    align-items: center;
+}
+.carousel-control-next-icon:after {
+    content: '>';
+    font-size: 55px;
+    color: #515357;
+}
+.carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 55px;
+    color: #515357;
+}
 
-
+/* style udpates for cards targeted by the carausel */
 .card button {
     display: block;
     margin: 0 auto;
 }
- .card-img-top {
+.card-img-top {
     height: 50%;
     object-fit: cover;
- }
-
- .card-body {
-   margin-top: 20px;
- }
-
- /* Carousel CSS */
-
-
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    align-items: center;
+}
+.card-body {
+    margin-top: 20px;
 }
 
- .carousel-control-next-icon:after{
-    content: '>';
-    font-size: 55px;
-    color: #515357;
- }
-
-.carousel-control-prev-icon:after{
-    content: '<';
-    font-size: 55px;
-    color: #515357;
-    }
-
-
-/* footer CSS */
-
+/* footer CSS, allows both the icons and text to appear inline and to the right */
 #footer {
     position: relative;
     padding: 20px;
     background-color: #515357;
     color: #fff;
     margin-top: 100px;
-    clear:both;
-    height:100px;
-  }
-
+    clear: both;
+    height: 100px;
+}
 footer h2 {
     border-right-style: dashed;
     border-right-width: 5px;
     border-right-color: black;
 }
-
-.fa-github{
-    background-color: white; 
+.fa-github {
+    background-color: white;
     color: black;
 }
-
-.a-linkedin{
+.a-linkedin {
     color: blue;
 }
